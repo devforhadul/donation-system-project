@@ -45,14 +45,14 @@
     <!-- Main section -->
     <!-- Buttons -->
     <div class="text-center space-x-2 mt-8 mb-5 w-11/12 mx-auto">
-      <button id="donateBTn" class="cursor-pointer bg-primary px-6 py-3 rounded-lg">Donation</button>
-      <button id="historyBTn" class="cursor-pointer px-6 py-3 rounded-lg border-2 border-secondary">
+      <button id="donateBtn" class="cursor-pointer bg-primary px-6 py-3 rounded-lg buttons">Donation</button>
+      <button id="historyBtn" class="cursor-pointer px-6 py-3 rounded-lg border-2 border-secondary buttons">
         History
       </button>
     </div>
 
     <!-- History section will hide -->
-    <div id="historySection" class="">
+    <div id="historySection" class="hidden">
        <!-- Auto update history -->
     </div>
 
@@ -176,6 +176,18 @@
         </div>
       </div>
     </div>
+
+
+    <!-- Doanate card preview -->
+     <div id="successBox" class="fixed inset-0 bg-gray-500/70 z-50 flex justify-center items-center hidden ">
+      <div class="bg-white p-6 shadow-lg rounded-lg w-96 text-center space-y-3 md:w-2/3 lg:w-1/2">
+        <h3>Congrates!</h3>
+        <img class="mx-auto" src="./assets/coin.png" alt="">
+        <p>You Have Donated for Humankid <br> <span class="font-bold">Successfully</span></p>
+        <button id="closeBtn" class="bg-gray-200 px-4 py-3 rounded-lg cursor-pointer">Close & Confirm</button>
+       </div>
+     </div>
+
 
     <script src="./scriptes/app.js"></script>
     <script src="./scriptes/utilities.js"></script>
